@@ -3,16 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla Weather Search Homework</title>
+
+    <title>Weather App</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    Hello
-    <footer>
-      This project was coded by <a href="https://github.com/Habba101">Rahaba</a>
-      Motaung, is open-sourced on
-      <a href="https://github.com/Habba101?tab=repositories">Github</a> and
-      hosted on
-      <a href="https://my-weather-search-homework.netlify.app/">Netlify</a>;
-    </footer>
+    <div class="weather-card">
+      <header>
+        <form>
+          <input type="search" placeholder="Enter city..." />
+          <input type="submit" value="search" />
+        </form>
+      </header>
+
+      <main>
+        <div class="weather-app-data">
+          <h1>Pretoria</h1>
+          <p>Date, Time</p>
+          <div class="temperature-info">
+            <h2>-5°C</h2>
+          </div>
+        </div>
+        <div class="weather-columns">
+          <div class="column">
+            <h3>Condition</h3>
+            <p></p>
+          </div>
+          <div class="column">
+            <h3>Humidity</h3>
+            <p>10%</p>
+          </div>
+          <div class="column">
+            <h3>Wind</h3>
+            <p>13 km/h</p>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        This project was coded by
+        <a href="https://github.com/Habba101" target="_blank">Rahaba</a>
+        Motaung, is open-sourced on
+        <a href="https://github.com/Habba101?tab=repositories" target="_blank"
+          >Github</a
+        >
+        and hosted on
+        <a
+          href="https://my-weather-search-homework.netlify.app/"
+          target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
   </body>
 </html>
