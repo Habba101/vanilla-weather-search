@@ -11,17 +11,23 @@
     <div class="weather-card">
       <header>
         <form>
-          <input type="search" placeholder="Enter city..." />
-          <input type="submit" value="search" />
+          <input
+            type="search"
+            placeholder="Enter city..."
+            required
+            class="search-form-input"
+            id="search-form"
+          />
+          <input type="submit" value="search" class="search-form-button" />
         </form>
       </header>
 
       <main>
         <div class="weather-app-data">
           <h1>Pretoria</h1>
-          <p>Date, Time</p>
+          <p class="date">Date, Time</p>
           <div class="temperature-info">
-            <h2>-5°C</h2>
+            <h1>-5°C</h1>
           </div>
         </div>
         <div class="weather-columns">
@@ -31,11 +37,11 @@
           </div>
           <div class="column">
             <h3>Humidity</h3>
-            <p>10%</p>
+            <p></p>
           </div>
           <div class="column">
             <h3>Wind</h3>
-            <p>13 km/h</p>
+            <p></p>
           </div>
         </div>
       </main>
@@ -55,5 +61,6 @@
         >
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
