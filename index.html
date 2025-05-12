@@ -3,20 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
 
     <title>Weather App</title>
-    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <div class="weather-card">
       <header>
-        <form>
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter city..."
             required
             class="search-form-input"
-            id="search-form"
+            id="search-form-input"
           />
           <input type="submit" value="search" class="search-form-button" />
         </form>
@@ -24,24 +25,30 @@
 
       <main>
         <div class="weather-app-data">
-          <h1>Pretoria</h1>
-          <p class="date">Date, Time</p>
+          <div>
+            <h1 id="city">Pretoria</h1>
+          </div>
+          <div>
+            <p class="date" id="time">Date, Time</p>
+          </div>
           <div class="temperature-info">
-            <h1>-5°C</h1>
+            <div id="icon"></div>
+            <div class="weather-app-temperature" id="temperature">-5</div>
+            <div class="weather-app-unit">°C</div>
           </div>
         </div>
         <div class="weather-columns">
           <div class="column">
-            <h3>Condition</h3>
-            <p></p>
+            <h3>Condition:</h3>
+            <p><strong id="description"></strong></p>
           </div>
           <div class="column">
-            <h3>Humidity</h3>
-            <p></p>
+            <h3>Humidity:</h3>
+            <p><strong id="humidity"></strong></p>
           </div>
           <div class="column">
-            <h3>Wind</h3>
-            <p></p>
+            <h3>Wind:</h3>
+            <p><strong id="wind-speed"></strong></p>
           </div>
         </div>
       </main>
@@ -61,6 +68,6 @@
         >
       </footer>
     </div>
-    <script src="src/index.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

@@ -10,26 +10,20 @@ body {
   min-height: 100vh;
 }
 
-header {
-  border-bottom: 1px solid #f9f7fe;
-  padding: 0 0 30px 0;
-}
-
-h1 {
-  font-size: 54px;
-  line-height: 18px;
-  font-weight: 100;
-  margin-top: 50px;
-}
-
 .weather-card {
   background: linear-gradient(to bottom, #4facfe, #00f2fe);
   margin-bottom: 300px;
+  display: block;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   color: white;
   text-align: center;
   padding: 30px;
+}
+
+header {
+  border-bottom: 1px solid #f9f7fe;
+  padding: 0 0 30px 0;
 }
 
 .search-form-input {
@@ -52,9 +46,11 @@ h1 {
   color: white;
 }
 
-.weather-app-data {
-  display: flex;
-  justify-content: space-between;
+h1 {
+  font-size: 54px;
+  line-height: 18px;
+  font-weight: 100;
+  margin-top: 50px;
 }
 
 .date {
@@ -62,6 +58,32 @@ h1 {
   margin-right: 60px;
   margin-top: 50px;
   color: rgb(13, 10, 201);
+}
+
+.weather-app-data {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.temperature-info {
+  display: flex;
+}
+
+.weather-app-temperature {
+  font-size: 54px;
+  font-weight: 100;
+  line-height: 18px;
+  margin-top: 50px;
+}
+
+.weather-app-unit {
+  margin-top: 25px;
+  margin-right: 40px;
+  font-size: 28px;
 }
 
 .temperature-info h2 {
@@ -73,9 +95,13 @@ h1 {
 .weather-columns {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 10px;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.weather-columns strong {
+  color: rgb(13, 10, 201);
 }
 
 .column {
